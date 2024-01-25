@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(180, 180, 243);
+}
+.custom-table {
+    border: 3px solid hsl(0, 33%, 96%); 
+    border-radius: 2px;
+}
+.custom-table th, .custom-table td {
+    text-align: center;
+    padding: 8px; 
+    border: 3px solid #ede4e4;
+}
+
+

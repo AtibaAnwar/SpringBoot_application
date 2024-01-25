@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring-cribsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h2 class="text-center">SpringBoot Crib-Sheet</h2>
+    <div class="container mx-auto">
+        <div class="row">
+            <div class="col-md-6 mt-4 ">
+                <h3 class="text-center">Link Reference</h3>
+                <table class="table table-hover custom-table table-sm ">
+                    <thead>
+                        <tr>
+                            <th>Sl No.</th>
+                            <th>Name</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody data-th-each="reference, loop : ${links}">
+                        <tr>
+                            <td data-th-text="${loop.index + 1}"></td>
+                            <td data-th-text="${reference.name}"></td>
+                            <td data-th-text="${reference.url}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 mt-4">
+                <h3 class="text-center">Important Keywords</h3>
+                <table class="table table-hover custom-table ">
+                    <thead>
+                        <tr>
+                            <th> Sl No.</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody data-th-each="Keyword, loop : ${keywords}">
+                        <tr>
+                            <td data-th-text="${loop.index + 1}"></td>
+                            <td data-th-text="${Keyword.name}"></td>
+                            <td data-th-text="${Keyword.usage}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+        <h3 class="text-center">Annotation</h3>
+        <table class="table table-hover custom-table">
+            <thead>
+                <tr>
+                    <th>Sl No.</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody data-th-each="annotation, loop : ${annotations}">
+                <tr>
+                    <td data-th-text="${loop.index + 1}"></td>
+                    <td data-th-text="${annotation.name}"></td>
+                    <td data-th-text="${annotation.description}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
