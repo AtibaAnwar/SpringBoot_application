@@ -20,4 +20,4 @@ This Spring Boot controller class, `CribSheetController`, is part of a web appli
 ## Usage:
 - The controller is mapped to the "/home" endpoint, and when accessed, it populates a Thymeleaf template with data and renders it for the user.
 
-Feel free to explore the source code for a deeper understanding of the implementation details and usage of these Spring Boot features.
+
